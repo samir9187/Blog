@@ -33,10 +33,6 @@ app.use("/deletePost", deletePostRoute);
 
 app.use("/updatePost", updatePostRoute);
 
-app.get("/", async (req, res) => {
-  res.status(200).json({ message: "home route" });
-});
-
 app.listen(4000, () => {
   console.log("Listening on port 4000");
 });
